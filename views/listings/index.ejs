@@ -1,0 +1,36 @@
+<% layout("/layouts/boilerplate") -%>
+<body>
+    <br/>
+    <h3>All Pizzas</h3>
+    <br/>
+    <div class="row row-cols-lg-3 row-cols-md-1 row-cols-sm-1">
+        <% for(let listing of allListings) { %>
+            <div class="card cols" >
+                <a href="/listings/<%= listing._id %>" class="card-link">
+                    <img src="<%= listing.image %>" class="card-img-top" alt="listing-image" style="height: 20rem;">
+                    <div class="card-img-overlay"><%= listing.name %></div><br/>
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <b><i><%=listing.name%></b></i>  
+                      <br/>
+                    <b><%= listing.description %></b><br/>
+                    Size: <%= listing.size %><br/>
+                    Crust: <%= listing.crust %><br/>
+                    Toppings: <%= listing.toppings.join(", ") %><br/>
+                    Category: <%= listing.category %>
+                    <% if (listing.category === 'Vegetarian') { %>
+                      <i class="fa-regular fa-circle-dot" style="color: green"></i>
+                    <% } %>
+                    <% if (listing.category === 'Non-Vegetarian') { %>
+                      <i class="fa-regular fa-circle-dot" style="color: red;"></i>
+                    <% } %>
+                    <br/>
+                    Availability: <%= listing.availability ? 'Available' : 'Not Available' %><br/>
+                    Price: $<%= listing.price.toLocaleString("en-US") %>
+                  </p>
+                </div>
+              </div>
+        <% } %>  
+    </div>
+</body>

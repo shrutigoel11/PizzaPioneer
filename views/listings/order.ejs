@@ -1,0 +1,41 @@
+<%layout("/layouts/boilerplate")-%>
+<body>
+    <div class="row mt-4">
+        <div class="col-8 offset-4">
+    <h3>Your Order is : <%=listing.name%></h3><br/>
+    <h5><i class="fa-solid fa-circle-exclamation"></i> Kindly check details:</h5>
+    <div class="card col-6  mt-3">
+        <img
+          src="<%= listing.image %>"
+          class="card-img-top show-img"
+          alt="listing-image"/>
+
+          <div class="card-body">
+
+            <p class="card-text">
+            <h4><b><%= listing.name %></b></h4><br/>
+             Description: <%= listing.description %><br/>
+             Price: $<%= listing.price.toLocaleString("en-US") %><br/>
+             Size: <%= listing.size %><br/>
+             Crust: <%= listing.crust %><br/>
+             Category: <%= listing.category %>
+             <% if (listing.category === 'Vegetarian') { %>
+                <i class="fa-regular fa-circle-dot" style="color: green"></i>
+              <% } %>
+              <% if (listing.category === 'Non-Vegetarian') { %>
+                <i class="fa-regular fa-circle-dot" style="color: red;"></i>
+              <% } %><br/>
+          </p>
+          </div>
+        </div>
+        <div class="form-floating">
+            <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" class="toppings">
+                <p><b>Toppings:</b></p>
+                <textarea name="listing[toppings]" class="form-control mt-2" id="floatingTextarea"> <%= listing.toppings.join(", ")%> </textarea> <br/><br/>
+        </div>
+
+      <button class="btn btn-dark  mb-5 mt-2">Confirm</button>
+
+    </div>
+  </div>
+</body>

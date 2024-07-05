@@ -1,0 +1,131 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif!important;
+    display: flex !important;
+    flex-direction: column !important ;
+    min-height: 100vh !important;
+}
+a{
+    text-decoration: none;
+    color:brown !important;
+}
+a:hover{
+  /* text-decoration: underline !important; */
+  opacity: 0.9;
+  color: #ff7f7f !important;
+}
+ul{
+    margin-top: 3rem;
+}
+ul li{
+    list-style-type: none;
+    
+}
+.toppings textarea{
+    width:200px;
+}
+/* Navbar and Footer */
+.container{
+    flex:1 !important;
+} 
+
+.navbar{
+    height:6rem;
+    background-color: white;
+}
+
+.fa-pizza-slice{
+    color:#ff7f7f;
+    font-size: 2.5rem;
+}
+.nav-link{
+    color:#222222 !important;
+}
+.f-info-links a{
+  text-decoration: none;
+  color:#222222
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info{
+    height:8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.f-info-links,.f-info-socials,.f-info-brand{
+    vertical-align: middle;
+    text-align: center;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-info-socials i{
+    font-size: 1.4rem;
+    margin-right: 1.5rem;
+}
+
+/* HOME */
+.home-img{
+    height:300px;
+
+}
+
+/* Index */
+
+.card{
+    border:none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width:100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0% !important;
+    width:30vw !important;
+}
+.card-text p{
+font-weight: 400 !important;
+
+}
+.card-link{
+    text-decoration: none;
+}
+/* Card Effect */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+/* Show */
+.show-img{
+    height: 40vh;
+}
+
+/* Order */
+#floatingTextarea{
+    width:28vw;
+}
+
+/* #confirm img {
+    transition: all 0.3s ease-in-out;
+}
+
+#confirm img:hover {
+    content: url('logo.png');
+} */

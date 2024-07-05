@@ -1,0 +1,40 @@
+<%layout("/layouts/boilerplate")-%>
+<body>
+    <div class="row mt-4">
+        <div class="col-8 offset-4">
+            <h3>Pizza Details :</h3>
+            <div class="card col-6  mt-5">
+                <img
+                  src="<%= listing.image %>"
+                  class="card-img-top show-img"
+                  alt="listing-image"/>
+
+                  <div class="card-body">
+
+                    <p class="card-text">
+                    <b><%= listing.name %></b><br/>
+                      <%= listing.description %><br/>
+                       $<%= listing.price.toLocaleString("en-US") %>
+                         <%= listing.size %><br/>
+                        <%= listing.crust %><br/>
+                       <%= listing.toppings.join(", ") %><br/>
+                       <%= listing.category %>
+                       <% if (listing.category === 'Vegetarian') { %>
+                        <i class="fa-regular fa-circle-dot" style="color: green"></i>
+                      <% } %>
+                      <% if (listing.category === 'Non-Vegetarian') { %>
+                        <i class="fa-regular fa-circle-dot" style="color: red;"></i>
+                      <% } %><br/>
+                  </p>
+
+                  </div>
+
+                </div>
+            <!-- <a href="/listings/<%= listing._id %>/edit">Edit Toppings</a> -->
+            <form method="get" action="/listings/<%= listing._id %>/order?_method=POST" style="display:inline;">
+                <button class="btn btn-dark add-btn  mb-5 mt-2">Order Now</button>
+            </form>
+        </li>
+    </div>
+   </div>
+</body>
