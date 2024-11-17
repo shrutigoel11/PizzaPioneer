@@ -1,0 +1,207 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="container mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold text-center text-primary mb-8">Terms and Conditions</h1>
+    
+    <!-- Sticky Sidebar Navigation -->
+    <div class="flex">
+        <div class="w-1/4 sticky top-0 hidden md:block mr-6">
+            <div class="p-4 bg-gray-100 shadow-md rounded-lg">
+                <h3 class="text-xl font-semibold text-primary mb-4">Sections</h3>
+                <ul class="space-y-2 text-lg text-gray-700">
+                    <li><a href="#acceptance" class="hover:text-primary hover:underline">1. Acceptance of Terms</a></li>
+                    <li><a href="#ordering" class="hover:text-primary hover:underline">2. Ordering and Payment</a></li>
+                    <li><a href="#delivery" class="hover:text-primary hover:underline">3. Delivery Policy</a></li>
+                    <li><a href="#cancellation" class="hover:text-primary hover:underline">4. Cancellation Policy</a></li>
+                    <li><a href="#privacy" class="hover:text-primary hover:underline">5. Privacy Policy</a></li>
+                    <li><a href="#contact" class="hover:text-primary hover:underline">6. Contact Information</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="w-3/4">
+            <div class="space-y-8">
+                <!-- Acceptance of Terms -->
+                <section id="acceptance" class="bg-gray-50 p-6 rounded-lg shadow-md animate__animated animate__fadeIn">
+                    <h2 class="text-2xl font-semibold text-primary mb-4">1. Acceptance of Terms</h2>
+                    <p class="text-lg text-gray-700">By accessing and placing an order with Pizza Pioneer, you confirm that you are in agreement with and bound by the terms of service contained in the Terms & Conditions outlined below.</p>
+                </section>
+
+                <!-- Ordering and Payment -->
+                <section id="ordering" class="bg-gray-50 p-6 rounded-lg shadow-md animate__animated animate__fadeIn animate__delay-1s">
+                    <h2 class="text-2xl font-semibold text-primary mb-4">2. Ordering and Payment</h2>
+                    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                        <li>All orders are subject to product availability.</li>
+                        <li>Prices are subject to change without notice.</li>
+                        <li>Payment must be made at the time of ordering.</li>
+                        <li>We accept major credit cards and cash on delivery.</li>
+                    </ul>
+                </section>
+
+                <!-- Delivery Policy -->
+                <section id="delivery" class="bg-gray-50 p-6 rounded-lg shadow-md animate__animated animate__fadeIn animate__delay-2s">
+                    <h2 class="text-2xl font-semibold text-primary mb-4">3. Delivery Policy</h2>
+                    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                        <li>Delivery times are approximate and may vary based on traffic and weather conditions.</li>
+                        <li>We deliver within a specified radius from our locations.</li>
+                        <li>Minimum order values may apply for delivery.</li>
+                        <li>Delivery fees may vary by location.</li>
+                    </ul>
+                </section>
+
+                <!-- Cancellation Policy -->
+                <section id="cancellation" class="bg-gray-50 p-6 rounded-lg shadow-md animate__animated animate__fadeIn animate__delay-3s">
+                    <h2 class="text-2xl font-semibold text-primary mb-4">4. Cancellation Policy</h2>
+                    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                        <li>Orders can be cancelled within 5 minutes of placing them.</li>
+                        <li>Refunds will be processed within 3-5 business days.</li>
+                        <li>We reserve the right to refuse service to anyone.</li>
+                    </ul>
+                </section>
+
+                <!-- Privacy Policy (Modal Popup) -->
+                <section id="privacy" class="bg-gray-50 p-6 rounded-lg shadow-md animate__animated animate__fadeIn animate__delay-4s">
+                    <h2 class="text-2xl font-semibold text-primary mb-4">5. Privacy Policy</h2>
+                    <p class="text-lg text-gray-700">We respect your privacy and are committed to protecting your personal information. For more details, click below to view our full Privacy Policy.</p>
+                    <button class="btn btn-primary text-white hover:bg-blue-600 py-2 px-4 rounded" data-bs-toggle="modal" data-bs-target="#privacyModal">View Privacy Policy</button>
+                </section>
+
+                <!-- Contact Information -->
+                <section id="contact" class="bg-gray-50 p-6 rounded-lg shadow-md animate__animated animate__fadeIn animate__delay-5s">
+                    <h2 class="text-2xl font-semibold text-primary mb-4">6. Contact Information</h2>
+                    <p class="text-lg text-gray-700">For any questions about these Terms and Conditions, please contact us at:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                        <li>Email: <a href="mailto:support@pizzapioneer.com" class="text-primary hover:underline">support@pizzapioneer.com</a></li>
+                        <li>Phone: <span class="text-primary">(555) 123-4567</span></li>
+                        <li>Address: <span class="text-primary">123 Pizza Street, Food City, FC 12345</span></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Privacy Policy -->
+<div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-content bg-white rounded-lg shadow-lg max-w-3xl mx-auto p-8 space-y-6">
+                <div class="modal-header flex justify-between items-center pb-4 border-b border-gray-300">
+                    <h3 class="text-2xl font-semibold text-gray-800">Privacy Policy</h3>
+                    <button type="button" class="text-gray-500 hover:text-gray-800 focus:outline-none" data-dismiss="modal">
+                        <i class="bi bi-x-circle-fill text-xl"></i>
+                    </button>
+                </div>
+            
+                <div class="modal-body space-y-6 text-gray-700">
+                    <p>Your privacy is important to us. This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our website or use our services.</p>
+                    
+                    <!-- Section 1: Information We Collect -->
+                    <section>
+                        <h4 class="text-lg font-semibold text-gray-900 mt-6">1. Information We Collect</h4>
+                        <p>We collect several types of information to provide and improve our services:</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li><strong>Personal Data:</strong> Information that you provide directly such as your name, email, phone number, delivery address, and payment details.</li>
+                            <li><strong>Usage Data:</strong> Automatically collected information about how you interact with our website (e.g., IP address, browser type, pages visited, etc.).</li>
+                        </ul>
+                    </section>
+            
+                    <!-- Section 2: How We Use Your Information -->
+                    <section>
+                        <h4 class="text-lg font-semibold text-gray-900 mt-6">2. How We Use Your Information</h4>
+                        <p>Your information is used to:</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>Process orders and deliver products.</li>
+                            <li>Provide customer support and respond to inquiries.</li>
+                            <li>Improve our website and services.</li>
+                            <li>Send promotional content (if you’ve opted in).</li>
+                        </ul>
+                    </section>
+            
+                    <!-- Section 3: Data Security -->
+                    <section>
+                        <h4 class="text-lg font-semibold text-gray-900 mt-6">3. Data Security</h4>
+                        <p>We use industry-standard security measures to protect your personal information. However, no method of electronic transmission or storage is 100% secure, and we cannot guarantee the complete security of your data.</p>
+                    </section>
+            
+                    <!-- Section 4: Sharing Your Information -->
+                    <section>
+                        <h4 class="text-lg font-semibold text-gray-900 mt-6">4. Sharing Your Information</h4>
+                        <p>We do not sell or rent your information, but we may share it in the following ways:</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>With trusted service providers (e.g., payment processors, delivery companies).</li>
+                            <li>If required by law or to protect our rights and property.</li>
+                        </ul>
+                    </section>
+            
+                    <!-- Section 5: Cookies -->
+                    <section>
+                        <h4 class="text-lg font-semibold text-gray-900 mt-6">5. Cookies</h4>
+                        <p>We use cookies to enhance your browsing experience. You can control cookie settings through your browser.</p>
+                    </section>
+            
+                    <!-- Section 6: Your Rights -->
+                    <section>
+                        <h4 class="text-lg font-semibold text-gray-900 mt-6">6. Your Rights</h4>
+                        <p>You have the right to access, correct, and delete your personal data. You can also unsubscribe from marketing communications at any time.</p>
+                    </section>
+            
+                    <!-- Section 7: Changes to This Privacy Policy -->
+                    <section>
+                        <h4 class="text-lg font-semibold text-gray-900 mt-6">7. Changes to This Privacy Policy</h4>
+                        <p>We may update this policy. Please check periodically for any changes. The date of the most recent update is indicated at the bottom of the policy.</p>
+                    </section>
+            
+                    <!-- Section 8: Contact Information -->
+                    <section>
+                        <h4 class="text-lg font-semibold text-gray-900 mt-6">8. Contact Information</h4>
+                        <p>If you have any questions or concerns, feel free to reach out to us:</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>Email: <a href="mailto:support@pizzapioneer.com" class="text-blue-600 hover:underline">support@pizzapioneer.com</a></li>
+                            <li>Phone: (555) 123-4567</li>
+                            <li>Address: 123 Pizza Street, Food City, FC 12345</li>
+                        </ul>
+                    </section>
+            
+                    <div class="mt-6 text-center text-sm text-gray-500">
+                        <p>Last updated: November 17, 2024</p>
+                    </div>
+                </div>
+            
+                <!-- Modal Footer with Close Button -->
+                <div class="modal-footer flex justify-between items-center pt-4 mt-6 border-t border-gray-300">
+                    <button class="btn btn-secondary text-gray-600 hover:bg-gray-100 py-2 px-4 rounded" data-dismiss="modal" onclick="window.location.href='/terms';">
+                        Close
+                    </button>
+                    <button class="btn btn-primary text-white hover:bg-blue-600 py-2 px-4 rounded" 
+        onclick="window.location.href='/terms';">
+    I Agree
+</button>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Tailwind CSS Animations -->
+<style>
+    .text-primary {
+        color: #FF6347; /* Tomato color */
+    }
+    .bg-primary {
+        background-color: #FF6347; /* Tomato color */
+    }
+    .hover\:underline:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<!-- Add Bootstrap JS for Modal functionality -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
