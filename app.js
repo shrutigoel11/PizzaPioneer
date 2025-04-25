@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const Listing = require("./models/listing.js");
 const ejsMate = require("ejs-mate");
 
+
 // EJS configuration
 app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");
